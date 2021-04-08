@@ -2,3 +2,8 @@ p2 {
     color: red;
     font-size: 52px;
 }
+
+p.centro {
+    color: pink;
+    font-size: 48px;
+}
