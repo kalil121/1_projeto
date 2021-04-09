@@ -65,9 +65,9 @@
             <h2>formularios</h2>
             <form method="POST" action="/action_page.php">
                 <label for="fname">Primeiro nome</label><br>
-                <input type=text id="fname" name="fname" value="Hudson"><br>
+                <input type=text id="fname" name="fname" value=""><br>
                 <label for="lname">Segundo nome</label><br>
-                <input type=text id="lname" name="lname" value="Kalil"><br>
+                <input type=text id="lname" name="lname" value=""><br>
                 <label for="senha">Senha</label><br>
                 <input type="password" id="senha" name="Senha"><br><br>
 
@@ -87,14 +87,44 @@
             <p2>um pato branco em pato manco</p>
                 <link rel="stylesheet" href="css/cor.css">
                 <p class="centro">Cruel Sun</p>
-                <!--Java-->
+                <!--Java
                 <script>
-                    function msg() {
-                        alert("Perguntei?");
+                    function ma() {
+                        alert("Finalmente...");
                     }
                 </script>
+
                 <form action=""></form>
-                <input type="button" onclick="">
+                <input type="button" onclick="msg()"> -->
+
+                <br><br><br>
+
+
+                <script>
+                    nome = "Hudon Kalil";
+                    idade = 23;
+                    filhos = false;
+                    salario = 1100.75;
+                </script>
+
+                <script>
+                    document.write("E ai," + nome);
+                </script>
+
+                <p>E ai, Hudson Kalil</p>
+
+                <form name="form_contato">
+                    <input type="text" name="nome" placeholder="Informe seu nome...">
+                    <input type="button" onclick="msg()" value="Exibir">
+                </form>
+
+                <script>
+                    function msg() {
+                        var nome_completo = form_contato.nome.value;
+                        alert(nome_completo);
+                        
+                    }
+                </script>
 
 </body>
 
